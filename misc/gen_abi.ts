@@ -29,6 +29,7 @@ const writeAbi = async () => {
     "CyberNFTV2.sol/CyberNFTV2.json",
     "CyberMintNFTRelayHook.sol/CyberMintNFTRelayHook.json",
     "CyberIDPermissionedRelayHook.sol/CyberIDPermissionedRelayHook.json",
+    "RafTokenReceiver.sol/RafTokenReceiver.json",
   ];
   const ps = folders.map(async (file) => {
     const f = await fs.readFile(path.join("./out", file), "utf8");
